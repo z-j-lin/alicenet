@@ -10,9 +10,9 @@
 // return the logs
 import { BytesLike, ContractReceipt } from "ethers";
 import { artifacts, ethers } from "hardhat";
-import { AliceNetFactory } from "../../typechain-types";
-import { encodeMultiCallArgs } from "./alicenetTasks";
-import { ALICENET_FACTORY, CONTRACT_ADDR, DEPLOYED_RAW } from "./constants";
+import { AliceNetFactory } from "typechain-types";
+import { encodeMultiCallArgs } from "scripts/lib/alicenetTasks";
+import { ALICENET_FACTORY, CONTRACT_ADDR, DEPLOYED_RAW } from "scripts/lib/constants";
 const defaultFactoryName = "AliceNetFactory";
 const DeployedRawEvent = "DeployedRaw";
 const contractAddrVar = "contractAddr";

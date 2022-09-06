@@ -2,6 +2,7 @@ import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-truffle5";
 import "@typechain/hardhat";
+import "tsconfig-paths/register";
 import "hardhat-abi-exporter";
 import "hardhat-contract-sizer";
 import "hardhat-deploy";
@@ -15,6 +16,7 @@ import "./scripts/generateImmutableAuth";
 import "./scripts/lib/alicenetFactoryTasks";
 import "./scripts/lib/alicenetTasks";
 import "./scripts/lib/gogogen";
+
 require("dotenv").config();
 
 /**

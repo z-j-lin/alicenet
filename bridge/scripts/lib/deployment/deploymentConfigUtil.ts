@@ -4,7 +4,7 @@ import {
   DEPLOYMENT_ARG_PATH,
   DEPLOYMENT_LIST_PATH,
   FACTORY_STATE_PATH,
-} from "../constants";
+} from "scripts/lib/constants";
 
 export async function readDeploymentList(usrPath?: string) {
   return await readTOML(DEPLOYMENT_LIST_PATH, usrPath);

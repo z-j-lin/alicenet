@@ -9,8 +9,8 @@ import {
 //   AliceNetFactory,
 //   AliceNetFactory__factory,
 // } from "../../../typechain-types";
-import { getEventVar } from "../alicenetFactoryTasks";
-import { encodeMultiCallArgs } from "../alicenetTasks";
+import { getEventVar } from "scripts/lib/alicenetFactoryTasks";
+import { encodeMultiCallArgs } from "scripts/lib/alicenetTasks";
 import {
   ALICENET_FACTORY,
   CONTRACT_ADDR,
@@ -27,10 +27,10 @@ import {
   UPGRADEABLE_DEPLOYMENT,
   UPGRADE_PROXY,
 } from "../constants";
-import { readDeploymentArgs } from "./deploymentConfigUtil";
-import { ProxyData } from "./factoryStateUtil";
+import { readDeploymentArgs } from "scripts/lib/deployment/deploymentConfigUtil";
+import { ProxyData } from "scripts/lib/deployment/factoryStateUtil";
 
-type Ethers = typeof import("../../../node_modules/ethers/lib/ethers") &
+type Ethers = typeof import("node_modules/ethers/lib/ethers") &
   HardhatEthersHelpers;
 
 export interface ArgData {

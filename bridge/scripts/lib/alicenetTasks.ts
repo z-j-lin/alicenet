@@ -12,7 +12,7 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 // import { ValidatorPool } from "../../typechain-types";
 import axios from "axios";
 import { DEFAULT_CONFIG_OUTPUT_DIR } from "./constants";
-import { readDeploymentArgs } from "./deployment/deploymentConfigUtil";
+import { readDeploymentArgs } from "scripts/lib/deployment/deploymentConfigUtil";
 export type MultiCallArgsStruct = {
   target: string;
   value: BigNumberish;

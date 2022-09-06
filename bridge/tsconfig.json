@@ -8,9 +8,15 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "resolveJsonModule": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "scripts/*":["./scripts/*"]
+    }
   },
   "include": [
+    "./",
+    "../bridge",
     "./test",
     "./scripts",
     "./contracts",

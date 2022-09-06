@@ -1,8 +1,8 @@
 import toml from "@iarna/toml";
 import { BigNumber, BigNumberish, BytesLike, ContractReceipt } from "ethers";
 import fs from "fs";
-import { FACTORY_STATE_PATH } from "../constants";
-import { readFactoryState } from "./deploymentConfigUtil";
+import { FACTORY_STATE_PATH } from "scripts/lib/constants";
+import { readFactoryState } from "scripts/lib/deployment/deploymentConfigUtil";
 
 export type FactoryData = {
   address: string;

@@ -8,7 +8,7 @@ import {
 import fs from "fs";
 import { task } from "hardhat/config";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
-import { encodeMultiCallArgs } from "./alicenetTasks";
+import { encodeMultiCallArgs } from "scripts/lib/alicenetTasks";
 import {
   ALICENET_FACTORY,
   CONTRACT_ADDR,
@@ -32,18 +32,18 @@ import {
   UPGRADEABLE_DEPLOYMENT,
   UPGRADE_DEPLOYED_PROXY,
   UPGRADE_PROXY,
-} from "./constants";
+} from "scripts/lib/constants";
 import {
   generateDeployArgTemplate,
   writeDeploymentArgs,
-} from "./deployment/deployArgUtil";
+} from "scripts/lib/deployment/deployArgUtil";
 import {
   DeploymentList,
   getDeploymentList,
   getSortedDeployList,
   transformDeploymentList,
   writeDeploymentList,
-} from "./deployment/deploymentListUtil";
+} from "scripts/lib/deployment/deploymentListUtil";
 import {
   DeployArgs,
   deployContractsMulticall,
@@ -60,7 +60,7 @@ import {
   getDeployUpgradeableMultiCallArgs,
   getDeployUpgradeableProxyArgs,
   isInitializable,
-} from "./deployment/deploymentUtil";
+} from "scripts/lib/deployment/deploymentUtil";
 import {
   DeployCreateData,
   FactoryData,
@@ -72,7 +72,7 @@ import {
   updateMetaList,
   updateProxyList,
   updateTemplateList,
-} from "./deployment/factoryStateUtil";
+} from "scripts/lib/deployment/factoryStateUtil";
 
 task(
   "getNetwork",

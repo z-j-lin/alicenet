@@ -4,13 +4,13 @@ import { Artifacts } from "hardhat/types";
 import {
   DEPLOYMENT_ARGS_TEMPLATE_FPATH,
   DEPLOYMENT_ARG_PATH,
-} from "../constants";
+} from "scripts/lib/constants";
 import {
   ArgData,
   DeploymentArgs,
   extractName,
   extractPath,
-} from "./deploymentUtil";
+} from "scripts/lib/deployment/deploymentUtil";
 
 export async function writeDeploymentArgs(
   deploymentArgs: DeploymentArgs,

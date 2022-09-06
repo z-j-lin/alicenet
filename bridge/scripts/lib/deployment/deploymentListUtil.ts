@@ -1,13 +1,13 @@
 import toml from "@iarna/toml";
 import fs from "fs";
 import { Artifacts } from "hardhat/types";
-import { DEFAULT_CONFIG_OUTPUT_DIR, DEPLOYMENT_LIST_FPATH } from "../constants";
-import { readDeploymentList } from "./deploymentConfigUtil";
+import { DEFAULT_CONFIG_OUTPUT_DIR, DEPLOYMENT_LIST_FPATH } from "scripts/lib/constants";
+import { readDeploymentList } from "scripts/lib/deployment/deploymentConfigUtil";
 import {
   getDeployGroup,
   getDeployGroupIndex,
   getDeployType,
-} from "./deploymentUtil";
+} from "scripts/lib/deployment/deploymentUtil";
 export interface ContractDeploymentInfo {
   contract: string;
   index: number;
